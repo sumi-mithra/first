@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+void main()
+
+{
+   
+  int i,j,k,n,a[n],count=0;
+  
+  //printf("enter num of axis");
+ 
+   scanf("%d",&n);
+ 
+   for(i=0;i<n;i++)
+    
+      {
+  
+              scanf("%d",&a[i]);
+   
+    }
+
+    for(i=0;i<n;i++)
+     
+    {
+ 
+           for(j=i+1;j<n;j++)
+       
+        {
+      
+            for(k=j+1;k<n;k++)
+         
+            {
+        
+                 if(a[i]!=a[j] && a[j]!=a[k] && a[k]!=a[i])
+                                    {
+                 
+                    count=count+1;
+                                                          //printf(" hi %d",count);
+                                                }
+
+                         }
+
+                 }
+
+        
+    }
+
+    printf("%d",count);
+
+    
+}
